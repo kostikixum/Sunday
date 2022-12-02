@@ -1,0 +1,16 @@
+﻿Console.WriteLine("Ведите кординаты Точки А - X ");
+double X = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Ведите кординаты Точки А - Y ");
+double Y = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Ведите кординаты Точки А - Z ");
+double Z = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Ведите кординаты Точки B - X ");
+double X1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Ведите кординаты Точки B - Y ");
+double Y1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Ведите кординаты Точки B - Z ");
+double Z1 = Convert.ToInt32(Console.ReadLine());
+double num1 = (((X - X1)* (X - X1)) + ((Y - Y1)*(Y - Y1)) + ((Z - Z1)* (Z - Z1)));
+double result = Math.Sqrt(num1);
+double rasto = Math.Round(result, 2);
+Console.WriteLine(rasto);
